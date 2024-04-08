@@ -1,0 +1,54 @@
+public class Pizza
+{
+	int pizzaNumber;
+	String name;
+	String toppings;
+	int price;
+	
+	
+	public Pizza(int pizzaNumber,String name, String toppings; int price)
+	{
+		this.pizzaNumber = pizzaNumber;
+		this.name = name;
+		this.toppings = toppings;
+		this.price = price;
+	}
+
+	public getPizzaNumber()
+	{
+		return pizzaNumber;
+	}
+
+	public getToppings()
+	{
+		return toppings;
+	}
+
+	public getPrice()
+	{
+		return price;
+	}
+
+	public setToppings()
+	{
+		this.toppings = toppings;
+	}
+
+	public setPrice()
+	{
+		this.price = price;
+	}
+
+	public toPrint()
+	{
+		System.out.println(pizzaNumber +" "+ name: +" "+ toppings+" "+ price);
+	}
+	
+	
+
+	
+}//end of pizza
+
+1 vesuvio tomat ost skinke 49
+
+

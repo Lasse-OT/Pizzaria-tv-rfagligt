@@ -1,0 +1,38 @@
+public class Order
+{
+	Pizza pizza;
+	date time;
+
+	public Order(Pizza pizza, date time)
+	{
+		this.pizza = pizza;
+		this.time = time;
+	}
+
+	public getPizza()
+	{
+		return pizza;
+	}
+
+	public getTime()
+	{
+		return time;
+	}
+
+	public setPizza()
+	{
+		this.pizza = pizza;
+	}
+	
+	public setTime()
+	{
+		this.time = time;
+	}
+
+	public toPrint()
+	{
+		System.out.println(pizza.toPrint() + "skal være klar til: " +time)
+	}
+
+
+}

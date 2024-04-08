@@ -1,0 +1,9 @@
+Ordrenummer: 1
+1 Vesuvio: Tomatsauce, ost, skinke og oregano  57kr.
+Ordren skal være færdig: 00:10
+Status: Færdiggjort
+Ordrenummer: 2
+5 Dennis: Tomatsauce, ost, skinke, pepperoni, cocktailpølser og oregano  65kr.
+7 Silvia: Tomatsauce, ost, pepperoni, rød peber, løg, oliven og oregano  61kr.
+Ordren skal være færdig: 00:11
+Status: Færdiggjort

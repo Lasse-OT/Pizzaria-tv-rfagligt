@@ -1,0 +1,24 @@
+Ordrenummer: 1
+12 Le Blissola: Tomatsauce, ost, skinke, rejer og oregano  61kr.
+Ordren skal være færdig: 13:50
+Status: Færdiggjort
+
+Ordrenummer: 2
+7 Silvia: Tomatsauce, ost, pepperoni, rød peber, løg, oliven og oregano  61kr.
+1 Vesuvio: Tomatsauce, ost, skinke og oregano  57kr.
+3 Cacciatore: Tomatsauce, ost, pepperoni og oregano  57kr.
+11 Hawai: Tomatsauce, ost, skinke, ananas og oregano  61kr.
+Ordren skal være færdig: 14:06
+Status: Færdiggjort
+
+
+I dag er salgene fordelt således
+3:Cacciatore: antal solgte: 1
+11:Hawai: antal solgte: 1
+7:Silvia: antal solgte: 1
+12:Le antal solgte: 1
+1:Vesuvio: antal solgte: 1
+
+Cashflow for the day: 
+297.0
+

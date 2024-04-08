@@ -1,0 +1,140 @@
+public class main
+{
+   public static void main(String[] args)
+   {
+      //instantiate scanner to read from console
+      Scanner input = new Scanner(System.in);
+      
+      //instantiate scanner to read from menukort.txt
+      Scanner read = new Scanner(new File("menukort.txt"));
+   
+   	//initialize array containing 14 objects of the pizza type
+   	Pizza[] allPizzas = new Pizza[14];
+   
+   	//instantiate array containing orders
+   	Order[] orders = new Order[1];
+   
+   	//String array containing the names of the 14 pizzas
+   	String[14] names = new String[]; 
+   
+   	//String array containing the toppings of the 14 pizzas
+   	String[] toppings = new String[14];
+   
+   	//Int array containing the prices of the 14 pizzas
+   	int[] prices = new int[14];
+      
+      
+   
+   	for (int i = 1; i <= 14; i++)
+   	{
+   		Pizza tempPizza = new Pizza(i, names[i], toppings[i], prices[i]);
+   		allPizzas[i] = tempPizza;
+   	}
+   
+   	Menu(allPizzas, orders);	
+   
+   
+   }//end of main
+   
+   
+   //this is basically the entire program//
+   public static void menu(Pizza[] allPizzas, Scanner input)
+   {
+   	
+   	System.out.println("Velkommen, vælg mellem følgende valgmuligheder");
+   	
+   	System.out.println("Vis menukort \n
+   	Lavbestilling\n
+   	Vis bestillinger\n
+   	Færdiggør bestilling\n
+   	Fjern bestilling\n
+   	Gem og luk");
+   	int navigator = input.nextInt();
+   	switch(navigator)
+   	{
+   		case 1:
+   		displayMenu(allPizzas);
+   		menu();
+   		break;
+   
+   		case 2:
+   		placeOrder();
+   		menu();
+   		break;
+   
+   		case 3:
+   		showOrders();
+   		menu();
+   		break;
+   
+   		case 4:
+   		finishOrder();
+   		menu();
+   		break;
+   
+   		case 5:
+   		removeOrder();
+   		menu();
+   		break;
+   
+   		case 6:
+   		writeToFile(orders);
+   		System.exit(navigator);
+   
+   		default:
+   		menu();
+   		
+   		
+   	}
+   }//end of menu
+   
+   public static ArrayList<Pizza> readfromFile(Scanner read)
+   {
+      ArrayList<Pizza>allPizzas = new ArrayList<>();
+      while (read.hasNextLine())
+      {
+         String line = read.nextLine();
+         Scanner lineScan = new Scanner(line);
+         //read pizzanumber
+         int number = lineScan.next();
+         //read pizzaname
+         String name = lineScan.next();
+         //read toppings
+         String toppings = "";
+         while (lineScan.hasNext() && !lineScan.hasNextInt()) 
+         {
+            toppings += lineScan.next() + ",";
+         }
+         int price = lineScan.nextInt();
+        Pizza tempPizza = new Pizza(number,name,toppings);
+        allPizzas.add(tempPizza)
+      }
+   }//end of readFromFile
+   
+   //calls the toPrint to every pizza in the menu//
+   public static void displayMenu(Pizza[] allPizzas)
+   {
+   	for(Pizza tempPizza: allPizzas)
+   		tempPizza.toPrint();
+   }
+   
+   public static Order placeOrder(Pizza pizza, date time, Orders[] orders)
+   {
+   	Order newOrder = new Order(pizza, time);
+   	Order ordersUpdated = new Order[orders.length + 1];
+   	
+   			
+   }
+   
+   public static void writeToFile(Order[] orders)
+   {
+   PrintStream out = new PrintStream(new File("dagens_ordrer.txt"));
+    for(Order tempOrder:orders)
+   	{
+   		out.println(tempOrder.toPrint());
+   	}
+   
+   }
+}//end of class
+
+
